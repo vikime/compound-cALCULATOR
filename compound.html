@@ -23,21 +23,20 @@
             <td><input type="text" name="r" id="Third" placeholder="Enter Rate of Interest(%)"> </td>
         </tr>
         <tr>
-            <td> <select>
-                <option value="Simple interest">Simple interest</option>
-                <option value="Compound interest">Compound interest</option>
-            </select> </td>
+            <td>
+                <select id="inputs" onchange="updateCounter(this.value)">
+                    <option value="simple">Simple Interest</option>
+                    <option value="compound">Compound Interest</option>
+                </select>
+            </td>
         </tr>
         <tr>
-            <td><button onClick="Compound_interest()"> Calculate </button> </td>
+            <td><button onClick="calcInterest()">Calculate</button> </td>
         </tr>
     </table>
     </div>
     <div class="result">
         <h3 id="num"></h3>
-    </div>
-    <div class="result">
-        <h3 id="num2"></h3>
     </div>
 </body>
 </html>
