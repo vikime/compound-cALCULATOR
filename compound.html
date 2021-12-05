@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="compound.js"></script>
+    <link rel="stylesheet" href="compound.css">
+
+    <title>Compound And Simple Interest Calculator</title>
+</head>
+<body>
+    <div class="container">
+    <h1> SIMPLE AND COMPOUND INTEREST CALCULATOR</h1>
+    <table>
+        <tr>
+            <td> <input type="text" name="p" id="First" placeholder="Enter Principal"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="t" id="Second" placeholder="Enter Time Period"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="r" id="Third" placeholder="Enter Rate of Interest(%)"> </td>
+        </tr>
+        <tr>
+            <td> <select>
+                <option value="Simple interest">Simple interest</option>
+                <option value="Compound interest">Compound interest</option>
+            </select> </td>
+        </tr>
+        <tr>
+            <td><button onClick="Compound_interest()"> Calculate </button> </td>
+        </tr>
+    </table>
+    </div>
+    <div class="result">
+        <h3 id="num"></h3>
+    </div>
+    <div class="result">
+        <h3 id="num2"></h3>
+    </div>
+</body>
+</html>
